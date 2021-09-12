@@ -17,7 +17,7 @@ func main() {
 	buff := new(bytes.Buffer)
 	var err error
 
-	if file, err = os.Open("sample_images/butterfiles.jpg"); err != nil {
+	if file, err = os.Open("sample_images/butterflies.jpg"); err != nil {
 		log.Fatal(err)
 	}
 
@@ -31,7 +31,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	if err = ioutil.WriteFile("output/butterfiles.jpg", buff.Bytes(), 0777); err != nil {
+	if err = ioutil.WriteFile("output/butterflies.jpg", buff.Bytes(), 0777); err != nil {
 		log.Fatal(err)
 	}
 
